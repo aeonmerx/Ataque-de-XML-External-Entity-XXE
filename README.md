@@ -28,7 +28,7 @@ El fragmento XML malicioso en la pregunta define una serie de entidades llamadas
 
 El código que se muestra es un fragmento de XML que utiliza DTD (Document Type Definition) para definir entidades XML personalizadas. Las entidades se definen de la siguiente manera:
 
-```xml
+```html
 <!ENTITY lol "lol">
 ```
 
