@@ -5,7 +5,7 @@ Ciberseguridad
 ## Introducción
 Este Readme proporciona información esencial sobre el Ataque de XML External Entity (XXE) y cómo protegerse contra él. El Ataque de XXE es una técnica utilizada por los ciberdelincuentes para explotar vulnerabilidades en aplicaciones web y obtener acceso no autorizado a datos sensibles. A continuación, se describen los detalles del ataque y las mejores prácticas para prevenirlo.
 
-``xml ?xml version="1.0" encoding="UTF-8"?>
+`` HTML ?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE lolz [
 <!ENTITY lol "lol">
 <!ELEMENT lolz (#PCDATA)>
