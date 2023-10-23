@@ -13,7 +13,7 @@ El fragmento XML malicioso en la pregunta define una serie de entidades llamadas
 ## Cómo Protegerse contra el Ataque de XXE
 Para protegerse contra el Ataque de XML External Entity (XXE), se deben implementar las siguientes medidas de seguridad:
 
-### Validación de entrada: ### Valide siempre las entradas XML del usuario y evite confiar en datos XML no confiables. Utilice una biblioteca XML segura que desactive las entidades externas por defecto.
+### Validación de entrada:  Valide siempre las entradas XML del usuario y evite confiar en datos XML no confiables. Utilice una biblioteca XML segura que desactive las entidades externas por defecto.
 
 Desactive el acceso a recursos externos: Asegúrese de que el procesador XML no tenga acceso a recursos externos, como archivos locales o recursos de red. Esto se puede hacer configurando la biblioteca XML para que desactive la expansión de entidades externas.
 
