@@ -46,6 +46,37 @@ En este caso, la entidad "lolz" se define como la repetición de "lol9." Al incl
 Es importante destacar que este código es malicioso y se proporciona solo con fines educativos y de concienciación. No debe utilizarse en entornos de producción ni para fines maliciosos.
 
 La prevención de ataques XXE implica validar y filtrar cuidadosamente las entradas XML, desactivar las entidades externas y mantener actualizadas las bibliotecas y herramientas relacionadas con el procesamiento de XML. La seguridad cibernética es esencial para proteger tus aplicaciones y sistemas contra amenazas potenciales como esta.
+
+## EJEMPLO DE UN XXE PARA MOSTRAR EN EL CORREO ELECTRÒNICO DATOS DE UN ARCHIVO
+Es un ejemplo de código XXE que no es malicioso y es ético utilizar con fines de aprendizaje y concienciación. Aquí tienes el ejemplo simple de XXE que no representa una amenaza:
+
+** XML original (archivo "data.xml"):
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <username>Usuario1</username>
+  <email>usuario1@example.com</email>
+</data>
+```
+** Documento XML con una entidad XXE:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
+<data>
+  <username>Usuario1</username>
+  <email>&xxe;</email>
+</data>
+```
+En este ejemplo, el archivo "data.xml" contiene información de un usuario, incluido su nombre de usuario y dirección de correo electrónico. Luego, en el documento XML con la entidad XXE, se define una entidad llamada "xxe" que hace referencia al archivo "/etc/passwd," que es un archivo comúnmente utilizado en sistemas Unix para almacenar información sobre usuarios.
+
+Al incluir "&xxe;" dentro de la etiqueta de correo electrónico, el procesador XML intentará recuperar el contenido del archivo "/etc/passwd" y lo mostrará en lugar del correo electrónico. Esto es un ejemplo inofensivo de cómo se puede usar XXE para acceder a un recurso local.
+
+Nuevamente, es importante destacar que este ejemplo se proporciona solo con fines educativos y de concienciación. En entornos de producción, es fundamental protegerse contra ataques XXE, y nunca debes utilizar entidades externas desconocidas o no confiables en aplicaciones reales. La seguridad cibernética es esencial para garantizar la integridad de tus sistemas.
+
 ## Cómo Protegerse contra el Ataque de XXE
 Para protegerse contra el Ataque de XML External Entity (XXE), se deben implementar las siguientes medidas de seguridad:
 
