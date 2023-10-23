@@ -26,6 +26,26 @@ El fragmento XML proporcionado en la pregunta representa un ejemplo de un Ataque
 
 El fragmento XML malicioso en la pregunta define una serie de entidades llamadas "lol," y se anidan unas dentro de otras para aumentar la carga de trabajo del servidor, lo que podría llevar a un ataque de denegación de servicio (DoS). Si esta carga de trabajo se coloca en una solicitud a un servidor que procesa XML sin protección adecuada, podría consumir recursos y ralentizar o incluso bloquear el servidor.
 
+El código que se muestra es un fragmento de XML que utiliza DTD (Document Type Definition) para definir entidades XML personalizadas. Las entidades se definen de la siguiente manera:
+
+```xml
+<!ENTITY lol "lol">
+```
+
+Esto define una entidad llamada "lol" que se asigna al valor "lol". Luego, se crean una serie de entidades anidadas, como "lol1," "lol2," "lol3," y así sucesivamente. Cada entidad anidada se crea concatenando la entidad anterior, por lo que "lol2" es una repetición de "lol1," y "lol3" es una repetición de "lol2," y así sucesivamente.
+
+Estas entidades anidadas pueden parecer inofensivas, pero en un contexto de un ataque XXE, se utilizan para abrumar el procesador XML con una carga de trabajo excesiva y generar una Denegación de Servicio (DoS). Los atacantes pueden usar esta técnica para agotar los recursos del servidor y hacer que deje de funcionar correctamente.
+
+Aquí hay un ejemplo de cómo se utiliza en la parte final del código:
+
+```xml
+<lolz>&lol9;</lolz>
+```
+En este caso, la entidad "lolz" se define como la repetición de "lol9." Al incluir "&lol9;" dentro de una etiqueta "lolz," se está haciendo referencia repetidamente a "lol9," lo que resulta en una carga de trabajo significativa para el servidor que procesa este XML.
+
+Es importante destacar que este código es malicioso y se proporciona solo con fines educativos y de concienciación. No debe utilizarse en entornos de producción ni para fines maliciosos.
+
+La prevención de ataques XXE implica validar y filtrar cuidadosamente las entradas XML, desactivar las entidades externas y mantener actualizadas las bibliotecas y herramientas relacionadas con el procesamiento de XML. La seguridad cibernética es esencial para proteger tus aplicaciones y sistemas contra amenazas potenciales como esta.
 ## Cómo Protegerse contra el Ataque de XXE
 Para protegerse contra el Ataque de XML External Entity (XXE), se deben implementar las siguientes medidas de seguridad:
 
