@@ -135,17 +135,17 @@ Falta de actualizaciones de seguridad: Algunos proveedores de hosting pueden no 
 ## Mejores prácticas de seguridad web:
 Actualización constante: Mantén todos los componentes de tu infraestructura web actualizados, incluidos el sistema operativo, el servidor web y las aplicaciones.
 
-### Firewalls y filtros: Utiliza firewalls de red y aplicaciones, y aplica filtros de seguridad para bloquear tráfico malicioso.
+#### Firewalls y filtros: Utiliza firewalls de red y aplicaciones, y aplica filtros de seguridad para bloquear tráfico malicioso.
 
-### Validación de entrada: Implementa una estricta validación de entrada para prevenir ataques de inyección, como SQL Injection o Cross-Site Scripting (XSS).
+#### Validación de entrada: Implementa una estricta validación de entrada para prevenir ataques de inyección, como SQL Injection o Cross-Site Scripting (XSS).
 
-### Monitoreo y detección: Implementa sistemas de monitoreo y detección de intrusiones para identificar comportamientos anómalos.
+#### Monitoreo y detección: Implementa sistemas de monitoreo y detección de intrusiones para identificar comportamientos anómalos.
 
-### Copias de seguridad: Realiza copias de seguridad regulares de tus datos y configura procedimientos de recuperación en caso de una brecha de seguridad.
+#### Copias de seguridad: Realiza copias de seguridad regulares de tus datos y configura procedimientos de recuperación en caso de una brecha de seguridad.
 
 ### Educación y concienciación: Capacita a tu equipo y usuarios sobre las mejores prácticas de seguridad, como el uso de contraseñas seguras y la detección de correos electrónicos de phishing.
 
-### Auditoría de seguridad: Realiza auditorías de seguridad regulares y pruebas de penetración para identificar y corregir vulnerabilidades.
+#### Auditoría de seguridad: Realiza auditorías de seguridad regulares y pruebas de penetración para identificar y corregir vulnerabilidades.
 
 La seguridad web es un proceso continuo y en constante evolución. Mantenerse al tanto de las amenazas y seguir las mejores prácticas es esencial para proteger tus sistemas y datos. Además, considera trabajar con profesionales de seguridad o expertos en el campo para fortalecer tu postura de seguridad.
 
