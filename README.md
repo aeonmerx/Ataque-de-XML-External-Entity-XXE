@@ -19,7 +19,8 @@ Este Readme proporciona información esencial sobre el Ataque de XML External En
 <!ENTITY lol8 "&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;&lol7;">
 <!ENTITY lol9 "&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;&lol8;">
 ]>
-<lolz>&lol9;</lolz>   ```
+<lolz>&lol9;</lolz>
+```
 ## Descripción del Ataque
 El fragmento XML proporcionado en la pregunta representa un ejemplo de un Ataque de XML External Entity (XXE). Este tipo de ataque se basa en la inclusión de entidades XML externas maliciosas en un documento XML. El atacante utiliza entidades XML para acceder a recursos locales o remotos no autorizados, lo que puede llevar a la divulgación de información confidencial o incluso a la ejecución de código malicioso en el servidor.
 
